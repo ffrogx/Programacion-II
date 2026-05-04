@@ -1,0 +1,259 @@
+TP3 - TRABAJO PRÁCTICO 3
+========================
+
+TEMA: Herencia, Clases Abstractas e Interfaces
+
+FECHA DE ENTREGA: 3 de mayo de 2026
+
+---
+
+RESUMEN DEL TRABAJO
+===================
+
+Se han implementado exitosamente los 5 ejercicios propuestos en el trabajo práctico,
+demostrando la aplicación práctica de los conceptos fundamentales de OOP en Java.
+
+EJERCICIOS COMPLETADOS:
+=======================
+
+1. ✅ SISTEMA DE FLOTA DE TRANSPORTE
+   - Clase abstracta: Vehiculo
+   - Subclases: Furgoneta, Motocicleta
+   - Concepto: Herencia, Polimorfismo
+   - Archivos: 4 clases Java
+
+2. ✅ GESTOR DE SUSCRIPCIONES DE STREAMING
+   - Clase abstracta: Suscripcion
+   - Subclases: PlanBasico, PlanFamiliar, PlanPremium
+   - Concepto: Clases Abstractas, Cálculo Polimórfico
+   - Archivos: 5 clases Java
+
+3. ✅ PASARELA DE PAGOS E-COMMERCE
+   - Interfaz: PasarelaPago
+   - Implementadores: TarjetaCredito, PayPal, Criptomonedas
+   - Concepto: Interfaces, Desacoplamiento
+   - Archivos: 5 clases Java
+
+4. ✅ ECOSISTEMA DE DISPOSITIVOS INTELIGENTES
+   - Interfaces: TomarFoto, ConectarWiFi
+   - Clases: CamaraSeguridad, TermostroInteligente, Smartphone
+   - Concepto: Múltiples Interfaces, Composición de Comportamientos
+   - Archivos: 6 clases Java
+
+5. ✅ MOTOR DE VIDEOJUEGO DE ROL
+   - Jerarquía multinivel: EntidadEspacial → SerVivo → {Personaje, Monstruo}
+   - Interfaz: LanzarHechizos (transversal)
+   - Clases concretas: GuerreroHumano, MagoElfo, Orco, Dragon
+   - Concepto: Herencia compleja, Interfaces Transversales, Polimorfismo Avanzado
+   - Archivos: 10 clases Java
+
+TOTAL: 30 clases Java implementadas
+
+---
+
+ESTRUCTURA DEL PROYECTO
+=======================
+
+tp3/
+├── pom.xml                         (Configuración Maven)
+├── README.md                       (Documentación técnica)
+├── INFORME.md                      (Informe detallado)
+├── HELP.md                         (Guía rápida)
+├── mvnw y mvnw.cmd                (Maven Wrapper)
+├── .mvn/                           (Configuración Maven)
+│
+└── src/main/java/com/tp3/
+    ├── ejercicio1/                 (4 clases)
+    │   ├── Vehiculo.java
+    │   ├── Furgoneta.java
+    │   ├── Motocicleta.java
+    │   └── Main1.java
+    │
+    ├── ejercicio2/                 (5 clases)
+    │   ├── Suscripcion.java
+    │   ├── PlanBasico.java
+    │   ├── PlanFamiliar.java
+    │   ├── PlanPremium.java
+    │   └── Main2.java
+    │
+    ├── ejercicio3/                 (5 clases)
+    │   ├── PasarelaPago.java (interfaz)
+    │   ├── TarjetaCredito.java
+    │   ├── PayPal.java
+    │   ├── Criptomonedas.java
+    │   └── Main3.java
+    │
+    ├── ejercicio4/                 (6 clases)
+    │   ├── TomarFoto.java (interfaz)
+    │   ├── ConectarWiFi.java (interfaz)
+    │   ├── CamaraSeguridad.java
+    │   ├── TermostroInteligente.java
+    │   ├── Smartphone.java
+    │   └── Main4.java
+    │
+    └── ejercicio5/                 (10 clases)
+        ├── EntidadEspacial.java (abstracta)
+        ├── SerVivo.java (abstracta)
+        ├── LanzarHechizos.java (interfaz)
+        ├── Personaje.java (abstracta)
+        ├── GuerreroHumano.java
+        ├── MagoElfo.java
+        ├── Monstruo.java (abstracta)
+        ├── Orco.java
+        ├── Dragon.java
+        └── Main5.java
+
+---
+
+CÓMO COMPILAR Y EJECUTAR
+========================
+
+COMPILACIÓN:
+-----------
+cd c:\Users\emili\Desktop\Programacion-II\tp3
+.\mvnw clean compile
+
+EJECUCIÓN:
+---------
+java -cp target\classes com.tp3.ejercicio1.Main1
+java -cp target\classes com.tp3.ejercicio2.Main2
+java -cp target\classes com.tp3.ejercicio3.Main3
+java -cp target\classes com.tp3.ejercicio4.Main4
+java -cp target\classes com.tp3.ejercicio5.Main5
+
+---
+
+CONCEPTOS APLICADOS
+====================
+
+✅ HERENCIA
+   - Uso en: Ejercicios 1, 2, 5
+   - Permite reutilización de código base
+   - Jerarquías de clases bien definidas
+
+✅ CLASES ABSTRACTAS
+   - Uso en: Ejercicios 1, 2, 5
+   - Definen contratos sin implementación
+   - Previenen instanciación directa
+   - Métodos abstractos fuerzan implementación en subclases
+
+✅ INTERFACES
+   - Uso en: Ejercicios 3, 4, 5
+   - Definen comportamientos adicionales
+   - Permiten herencia múltiple de comportamientos
+   - Desacoplamiento entre componentes
+
+✅ POLIMORFISMO
+   - Procesamiento de colecciones heterogéneas
+   - Llamadas a métodos específicos según tipo real
+   - Reducción de complejidad de código cliente
+
+---
+
+ARCHIVOS DE DOCUMENTACIÓN
+==========================
+
+1. README.md
+   - Descripción detallada de cada ejercicio
+   - Estructura de clases
+   - Conceptos aplicados
+   - Instrucciones de compilación y ejecución
+
+2. INFORME.md (ESTE DOCUMENTO)
+   - Análisis profundo de cada ejercicio
+   - Problemas encontrados y soluciones
+   - Conclusiones y lecciones aprendidas
+   - Patrones de diseño identificados
+
+3. HELP.md
+   - Guía rápida de uso
+   - Estructura simplificada
+   - Troubleshooting básico
+
+---
+
+ESTADO DE COMPILACIÓN
+======================
+
+✅ Compilación exitosa sin errores
+✅ Todos los 30 archivos Java compilados correctamente
+✅ Archivos .class generados en target/classes
+✅ Ejecución de todos los programas verificada
+
+---
+
+SALIDA DE PRUEBA (EJERCICIO 1)
+==============================
+
+====== EJERCICIO 1: SISTEMA DE FLOTA DE TRANSPORTE ======
+
+REPORTE DE FLOTA:
+
+=== FURGONETA ===
+Marca: Mercedes
+Modelo: Sprinter
+Tarifa Base: $150.0
+Capacidad de Carga: 2500.0 kg
+
+=== MOTOCICLETA ===
+Marca: Yamaha
+Modelo: YZF-R1
+Tarifa Base: $50.0
+Cilindrada: 998 cc
+
+[... más vehículos ...]
+
+Tarifa promedio de la flota: $117,00
+Total de vehículos: 5
+
+---
+
+PROBLEMAS ENCONTRADOS Y RESUELTOS
+==================================
+
+PROBLEMA: Maven Wrapper no disponible en tp3
+SOLUCIÓN: Copiar mvnw, mvnw.cmd y carpeta .mvn de tp2
+
+PROBLEMA: Compilación requiere dependencias de Maven
+SOLUCIÓN: Maven las descarga automáticamente en primera ejecución
+
+PROBLEMA: Algunos caracteres especiales en consola
+SOLUCIÓN: No afecta funcionalidad, solo presentación visual
+
+---
+
+REQUISITOS CUMPLIDOS
+====================
+
+✅ Aplicación de Herencia para reutilización de código
+✅ Diseño e implementación de jerarquías con Clases Abstractas
+✅ Definición de contratos con Interfaces
+✅ Resolución de herencia múltiple mediante Interfaces
+✅ Aplicación de Polimorfismo para procesar colecciones heterogéneas
+✅ Código compilable y ejecutable sin errores
+✅ Documentación completa y clara
+✅ Ejemplos prácticos y demostraciones funcionales
+
+---
+
+OBSERVACIONES FINALES
+=====================
+
+El trabajo completa exitosamente todos los objetivos propuestos.
+
+Cada ejercicio demuestra de forma práctica y clara los conceptos
+fundamentales de la Programación Orientada a Objetos en Java,
+permitiendo comprender cómo se aplican en problemas reales.
+
+La jerarquía de clases está bien diseñada, permitiendo:
+- Reutilización máxima de código
+- Fácil extensión sin modificación de código existente
+- Procesamiento uniforme de objetos heterogéneos
+- Mantenibilidad a largo plazo
+
+---
+
+**LISTO PARA ENTREGA**
+
+Emiliano Medina
+3 de mayo de 2026
